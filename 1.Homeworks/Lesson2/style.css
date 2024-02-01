@@ -1,0 +1,244 @@
+body {
+   background-color: #262829;
+   padding-top: 30px;
+   padding-bottom: 30px;
+
+	& * {
+		text-decoration: none !important;
+	}
+
+   /* Navigation Section */
+   nav {
+      & > section {
+         background-color: #414243;
+         margin-bottom: 20px;
+         padding: 30px;
+      }
+
+      & > section:not(.author) {
+         .top {
+            color: white;
+            margin-bottom: 50px;
+            position: relative;
+
+            &::after {
+               content: "";
+               position: absolute;
+               left: -30px;
+               right: -30px;
+               bottom: -20px;
+               height: 1px;
+               background-color: #252728;
+            }
+         }
+         .bottom {
+            & * {
+               color: rgba(255, 255, 255, 0.6) !important;
+               text-decoration: none;
+               font-size: 17px;
+
+               &:hover {
+                  color: #fff !important;
+               }
+            }
+         }
+      }
+
+      .author {
+         text-align: center;
+         color: white;
+         padding: 50px 0 0 0;
+
+         .top {
+            /* xkod */
+
+            .logo {
+               width: 130px;
+               height: 130px;
+               overflow: hidden;
+               border-radius: 50%;
+               margin: auto;
+
+               img {
+                  width: 100%;
+               }
+            }
+
+            .desc {
+               & > div {
+                  margin: 20px;
+               }
+
+               .name {
+                  font-size: 27px;
+                  font-weight: bold;
+               }
+               .about {
+                  font-size: 18px;
+               }
+               .social {
+                  font-size: 18px;
+                  margin: 40px !important;
+
+                  & > * {
+                     color: white;
+                  }
+
+                  a {
+                     display: inline-flex;
+                     justify-content: center;
+                     align-items: center;
+                     width: 40px;
+                     height: 40px;
+                     background-color: #3a3c3d;
+                     overflow: hidden;
+                     border-radius: 50%;
+                     margin-right: 5px;
+                     transition: 0.3s;
+
+                     &:hover {
+                        background-color: white;
+                        color: black;
+                     }
+                  }
+               }
+            }
+         }
+
+         .bottom {
+            display: flex;
+            justify-content: space-between;
+            border-top: 1px solid #252728;
+
+            & > * {
+               text-decoration: none;
+               color: white;
+            }
+
+            a {
+               padding: 20px 30px;
+               flex-grow: 1;
+
+               &:not(:last-child) {
+                  border-right: 1px solid #252728;
+               }
+            }
+         }
+      }
+
+      .searching {
+         display: flex;
+         justify-content: space-between;
+         padding: 0;
+
+         & * {
+            margin: 0;
+            padding: 0;
+            outline: 0;
+            border: 0;
+
+            color: white;
+         }
+
+         input {
+            flex-grow: 5;
+            padding: 15px 15px;
+            caret-color: white;
+            background-color: #404243;
+         }
+         button {
+            flex-grow: 3;
+            cursor: pointer;
+            background-color: #404243;
+
+            &:hover {
+               background-color: #525354;
+               color: white;
+            }
+         }
+      }
+
+      .tags {
+         a {
+            display: inline-flex;
+            padding: 5px;
+            background-color: #4f5152;
+            margin-bottom: 5px;
+         }
+      }
+
+      .categories {
+         ul {
+            list-style-image: url("https://buraksenyurt.com/Content/images/blog/rssButton.png");
+         }
+      }
+
+      .comments {
+         /* kod */
+      }
+
+      .copyright {
+         background-color: #252728;
+         padding: 0;
+
+         & * {
+            color: grey;
+            text-decoration: none;
+         }
+      }
+   }
+
+   /* Main Content Section */
+   main {
+      /* kod */
+
+      .contents {
+         /* kod */
+
+         .content {
+            padding: 40px;
+            margin-bottom: 30px;
+            background-color: white;
+
+				h2{
+					color: #0062CA !important;
+					font-size: 30px;
+					
+				}
+
+				h2+div {
+					font-size: 15px;
+				}
+				h2~p {
+					font-size: 19px;
+				}
+         }
+      }
+
+      .pagination {
+			display: flex;
+			justify-content: center;
+
+			div {
+
+				& a {
+					margin: 0;
+					border: 0;
+					padding: 0;
+					background-color: #46484A;
+					color: wheat;
+					padding: 10px;
+				}
+	
+				div {
+					display: inline-flex;
+	
+					a {
+						margin-right: 5px;
+					}
+				}
+			}
+
+      }
+   }
+}

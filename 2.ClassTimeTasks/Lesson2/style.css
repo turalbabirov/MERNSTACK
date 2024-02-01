@@ -1,0 +1,169 @@
+body {
+   margin: 0 !important;
+   padding: 0 !important;
+   box-sizing: border-box !important;
+   outline: 0 !important;
+   border: 0 !important;
+   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+
+   a {
+      text-decoration: none;
+      color: #ccc9d1;
+   }
+
+   a.active {
+      color: white;
+   }
+
+   header {
+      position: relative;
+      background-image: url("https://uikitbase.com/demo/html/uhow/html/images/header-bg-2.png");
+      border-radius: 0 0 30px 30px;
+      margin: auto 30px;
+      height: 75vh;
+      /* overflow: hidden; */
+
+      .referance {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         width: 40px;
+         height: 40px;
+         position: absolute;
+         bottom: -17px;
+         left: 50%;
+         background-color: white;
+         border-radius: 50%;
+         text-align: center;
+         box-shadow: 0px 0px 10px grey;
+         font-size: 12px;
+         color: black;
+      }
+
+      .center {
+         width: 80%;
+         margin: auto;
+
+         nav {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid #774ebe;
+
+            & > div {
+               display: flex;
+               align-items: center;
+            }
+
+            .logo {
+            }
+
+            .menu {
+               a {
+                  transition: 0.5s;
+
+                  &:not(:last-child) {
+                     margin-right: 15px;
+                  }
+
+                  &:hover {
+                     color: white;
+                  }
+               }
+
+               .menu-burger {
+                  display: none;
+               }
+            }
+
+            .login-register {
+               a {
+                  background-color: #7a52c2;
+                  padding: 7px 25px;
+                  border-radius: 20px;
+                  transition: 1s;
+
+                  &:not(:last-child) {
+                     margin-right: 10px;
+                  }
+
+                  &:hover {
+                     color: black;
+                     background-color: aliceblue;
+                  }
+               }
+            }
+         }
+
+         section.main-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 60vh;
+            font-size: 27px;
+
+            & > div {
+               text-align: center;
+               color: white;
+            }
+
+            .heading {
+               h2 {
+                  margin-bottom: 0;
+               }
+
+               h5 {
+                  color: gray;
+                  margin-top: 0;
+               }
+            }
+
+            .searching {
+               display: flex;
+               border-radius: 5px;
+               overflow: hidden;
+               width: 50%;
+               background-color: white;
+               padding: 10px;
+
+               input {
+                  height: 100%;
+                  margin: 0;
+                  padding: 0;
+                  outline: 0;
+                  border: 0;
+                  position: relative;
+                  bottom: 0;
+                  text-indent: 10px;
+                  flex-grow: 10;
+
+                  &::placeholder {
+                     font-size: 18px;
+                     color: lightgrey;
+                  }
+               }
+
+               a {
+                  flex-grow: 1;
+
+                  i {
+                     color: #673ab7;
+                  }
+               }
+            }
+         }
+      }
+   }
+}
+
+@media only screen and (max-width: 1075px) {
+   nav {
+      .menu {
+         display: none !important;
+      }
+
+      .login-register {
+      }
+   }
+}
