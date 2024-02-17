@@ -1,0 +1,23 @@
+.basliq {
+	font-size: 12px;
+	color: black;
+	background-color: white;
+
+	@include media-breakpoint-only(md) {
+		font-size: 50px;
+		color: white;
+		background-color: black;
+	}
+}
+
+.basliq-qasliq {
+	font-size: 34px;
+	color: red;
+	background-color: white;
+
+	@include media-breakpoint-only(md) {
+		font-size: 150px;
+		color: white;
+		background-color: blue;
+	}
+}

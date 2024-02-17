@@ -1,0 +1,136 @@
+1-ci mövzu | Getting Started & Node Module System & Node Package Manner
+What is Node
+Node Architecture
+How Node Works
+Installing Node
+Your First Node Program
+
+2-ci mövzu | Node Module System
+Introduction
+Global Object
+Modules
+Creating a Module
+Loading a Module
+Module Wrapper Function
+Path Module
+OS Module
+File System Module
+Events Module
+Event Arguments
+Extending Event Emitter
+HTTP Module
+
+3-cü mövzu | Node Package Manner
+Introduction
+Package.json
+Installing a Node Package
+Using a Package
+Package Dependencies
+NPM Packages and Source Control
+Semantic Versioning
+Listing the Installed Packages
+Viewing Registry Info for a Package
+Installing a Specific Version of a Package
+Updating Local Packages
+DevDependencies
+Uninstalling a Package
+Working with Global Packages
+Publishing a Package
+Updating a Published Package
+
+4-cü mövzu | Building RESTful APIs Using Express & Express Advanced Topics
+Introduction
+RESTful Services
+Introducing Express
+Building Your First Web Server
+Nodemon
+Environment Variables
+Route Parameters
+Handling HTTP GET Requests
+Handling HTTP POST Requests
+Calling Endpoints Using Postman
+Input Validation
+Handling HTTP PUT Requests
+Handling HTTP Delete Requests
+Project - Build the Genres API
+Introduction
+Middleware
+Creating Custom Middleware
+Built-In Middleware
+Third-party Middleware
+Environments
+Configuration
+Debugging
+Templating Engines
+Database Integration
+Authentication
+Structuring Express Applications
+Project- Restructure the App
+
+5-ci mövzu | Asynchronous JavaScript & CRUD Operations Using MongoDB
+Synchronous Vs. Asynchronous Code
+Patterns For Dealing With Asynchronous Code
+Callbacks
+Callback Hell
+Named Functions to Rescue
+Promises
+Replacing Callbacks with Promises
+Consuming Promises
+Creating Settled Promises
+Running Parallel Promises
+Async and Await
+Exercise
+
+6-cı mövzu | CRUD Operations Using MongoDB
+Introducing MongoDB
+Installing MongoDB on Mac
+Installing MongoDB on Windows
+Connecting to MongoDB
+Schemas
+Models
+Saving a Document
+Querying Documents
+Comparison Query Operators
+Logical Query Operators
+
+7-ci mövzu | Mongoose - Data Validation & Mongoose- Modeling Relationships Between Connected Data & Authentication and Authorization
+Validation
+Built-In Validators
+Custom Validators
+Async Validators
+Validation Errors
+SchemaType Options
+Project - Add Persistence to Genres API
+Project - Build the Customers API
+Restructuring the Project
+Modelling Relationships
+Referencing Documents
+Population
+Embedding Documents
+Using an Array of Sub-documents
+Project - Build the Movies API
+Project - Build the Rentals API
+Transactions
+ObjectID
+Validating Object IDs
+6A Better Implementation
+
+8-ci mövzu | Authentication and Authorization
+Introduction
+Creating the User Model
+Registering Users
+Using Lodash
+Hashing Passwords
+Authenticating Users
+Testing the Authentication
+JSON Web Tokens
+Generating Authentication Tokens
+Storing Secrets in Environment Variables
+Setting Response Headers
+Encapsulating Logic in Mongoose Models
+Authorization Middleware
+Protecting Routes
+Getting the Current User
+Logging Out Users
+Role Based Authorization
+Testing the Authorization

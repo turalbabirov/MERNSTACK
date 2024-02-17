@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <link
+         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+         rel="stylesheet"
+         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+         crossorigin="anonymous"
+      />
+      <link
+         rel="stylesheet"
+         href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+      />
+      <!-- FontAwesome 6.2.0 CSS -->
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+         crossorigin="anonymous"
+         referrerpolicy="no-referrer"
+      />
+
+      <link rel="stylesheet" href="assets/scss/main.css" />
+   </head>
+   <body>
+      <!-- Header -->
+      <header class="header">
+         <div
+            class="header__top col-9 mx-auto d-flex justify-content-between mt-4"
+         >
+            <div
+               class="header__top-logo d-flex justify-content-center align-items-center border-1 border-danger"
+            >
+               <a
+                  class="navbar-brand bg-transparent"
+                  class="d-inline-flex"
+                  href="#"
+                  ><img src="assets/media/img/logo-light.png" alt=""
+               /></a>
+            </div>
+
+            <nav class="header__top-navbar navbar navbar-expand-xl">
+               <div class="container-fluid">
+                  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                     <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                           <a
+                              class="nav-link dropdown-toggle active"
+                              href="#"
+                              role="button"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                           >
+                              Home
+                           </a>
+                           <ul class="dropdown-menu dropdown-menu-dark">
+                              <li>
+                                 <a class="dropdown-item" href="#">Home One</a>
+                              </li>
+                              <li>
+                                 <a class="dropdown-item" href="#">Home Two</a>
+                              </li>
+                              <li>
+                                 <a class="dropdown-item" href="#"
+                                    >Home Three</a
+                                 >
+                              </li>
+                              <li>
+                                 <a class="dropdown-item" href="#"
+                                    >Landing Page</a
+                                 >
+                              </li>
+                           </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                           <a
+                              class="nav-link dropdown-toggle"
+                              href="#"
+                              role="button"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                           >
+                              Pages
+                           </a>
+                           <ul class="dropdown-menu dropdown-menu-dark">
+                              <li>
+                                 <a class="dropdown-item" href="#">Our Story</a>
+                              </li>
+                              <li>
+                                 <a class="dropdown-item" href="#">Our Chefs</a>
+                              </li>
+                              <li>
+                                 <a class="dropdown-item" href="#"
+                                    >Testimonials</a
+                                 >
+                              </li>
+                              <li>
+                                 <a class="dropdown-item" href="#"
+                                    >Reservation</a
+                                 >
+                              </li>
+                              <li>
+                                 <a class="dropdown-item" href="#">FAQs</a>
+                              </li>
+                              <li>
+                                 <a class="dropdown-item" href="#">404 Page</a>
+                              </li>
+                           </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                           <a
+                              class="nav-link dropdown-toggle"
+                              href="#"
+                              role="button"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                           >
+                              Menu
+                           </a>
+                           <ul class="dropdown-menu dropdown-menu-dark">
+                              <li>
+                                 <a class="dropdown-item" href="#">Menu Grid</a>
+                              </li>
+                              <li>
+                                 <a class="dropdown-item" href="#"
+                                    >Menu Board</a
+                                 >
+                              </li>
+                              <li>
+                                 <a class="dropdown-item" href="#"
+                                    >Menu Gallery</a
+                                 >
+                              </li>
+                              <li>
+                                 <a class="dropdown-item" href="#"
+                                    >Menu Simple</a
+                                 >
+                              </li>
+                           </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                           <a
+                              class="nav-link dropdown-toggle"
+                              href="#"
+                              role="button"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                           >
+                              Blog
+                           </a>
+                           <ul class="dropdown-menu dropdown-menu-dark">
+                              <li>
+                                 <a class="dropdown-item" href="#">Blog Grid</a>
+                              </li>
+                              <li>
+                                 <a class="dropdown-item" href="#"
+                                    >Blog Standart</a
+                                 >
+                              </li>
+                              <li>
+                                 <a class="dropdown-item" href="#"
+                                    >Blog Details</a
+                                 >
+                              </li>
+                           </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                           <a
+                              class="nav-link dropdown-toggle"
+                              href="#"
+                              role="button"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                           >
+                              Shop
+                           </a>
+                           <ul class="dropdown-menu dropdown-menu-dark">
+                              <li>
+                                 <a class="dropdown-item" href="#"
+                                    >Shop Full Width</a
+                                 >
+                              </li>
+                              <li>
+                                 <a class="dropdown-item" href="#"
+                                    >Shop Sidebar Left</a
+                                 >
+                              </li>
+                              <li>
+                                 <a class="dropdown-item" href="#"
+                                    >Shop Sidebar Right</a
+                                 >
+                              </li>
+                              <li>
+                                 <a class="dropdown-item" href="#"
+                                    >Shop Details</a
+                                 >
+                              </li>
+                              <li>
+                                 <a class="dropdown-item" href="#">Shop Cart</a>
+                              </li>
+                           </ul>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#">Contact</a>
+                        </li>
+                        <li class="nav-item nav-item-withbg bg-warning">
+                           <a class="nav-link" href="#">Book A Table </a>
+                        </li>
+                        <!-- Bu navlinke border ver -->
+                        <li class="nav-item">
+                           <a href="#" class="nav-link"
+                              ><i class="fa-solid fa-magnifying-glass"></i
+                           ></a>
+                        </li>
+                        <li class="nav-item">
+                           <a href="#" class="nav-link"
+                              ><i class="fa-solid fa-cart-shopping me-3"></i
+                           ></a>
+                        </li>
+                        <li class="nav-item">
+                           <a href="#" class="nav-link"
+                              ><i class="fa-solid fa-bars"></i
+                           ></a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </nav>
+         </div>
+
+         <div class="header__bottom">
+            <!-- Swiper -->
+            <div class="swiper mainPageSlider">
+               <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                     <img
+                        src="assets/media/img/header-slider1.jpg"
+                        class="swiper__img"
+                        alt=""
+                     />
+                     <div class="swiper-content">
+                        <h2>Welcome to Steak In</h2>
+                        <h3>We are food Masters!</h3>
+                        <p>
+                           Steak In hasthe perfect place to enjoy fine food and
+                           great cocktails with excellent service, in
+                           confortable atmos
+                        </p>
+                        <button class="btn btn-outline-warning rounded-pill">
+                           Book your table now
+                        </button>
+                     </div>
+                  </div>
+                  <div class="swiper-slide">
+                     <img
+                        src="assets/media/img/header-slider2.jpg"
+                        class="swiper__img"
+                        alt=""
+                     />
+                     <div class="swiper-content">
+                        <h2>Welcome to Steak In</h2>
+                        <h3>We are food Masters!</h3>
+                        <p>
+                           Steak In hasthe perfect place to enjoy fine food and
+                           great cocktails with excellent service, in
+                           confortable atmos
+                        </p>
+                     </div>
+                  </div>
+                  <div class="swiper-slide">
+                     <img
+                        src="assets/media/img/header-slider3.jpg"
+                        class="swiper__img"
+                        alt=""
+                     />
+                     <div class="swiper-content">
+                        <h2>Welcome to Steak In</h2>
+                        <h3>We are food Masters!</h3>
+                        <p>
+                           Steak In hasthe perfect place to enjoy fine food and
+                           great cocktails with excellent service, in
+                           confortable atmos
+                        </p>
+                     </div>
+                  </div>
+               </div>
+               <div class="swiper-button-next"></div>
+               <div class="swiper-button-prev"></div>
+               <div class="swiper-pagination"></div>
+            </div>
+         </div>
+      </header>
+
+      <section class="section1 mt-5 py-5">
+         <div class="container">
+            <div class="row g-5">
+               <div class="col-12 col-lg-6 d-flex align-items-center">
+                  <div class="text-center">
+                     <h2>Welcome to Steak In</h2>
+                     <h3>We are food Masters!</h3>
+                     <p>
+                        Steak In hasthe perfect place to enjoy fine food and
+                        great cocktails with excellent service, in confortable
+                        atmos
+                     </p>
+                     <button class="btn btn-outline-dark rounded-pill">
+                        Book your table now
+                     </button>
+                  </div>
+               </div>
+
+               <div class="col-12 col-lg-6">
+                  <div
+                     class="row justify-content-center align-items-center g-3 g-xxl-1"
+                  >
+                     <div class="col-12 col-sm-6 d-flex justify-content-center">
+                        <img
+                           src="assets/media/img/section10.jpg"
+                           alt=""
+                           class="img-fluid"
+                        />
+                     </div>
+                     <div class="col-12 col-sm-6 d-flex justify-content-center">
+                        <img
+                           src="assets/media/img/section11.jpg"
+                           alt=""
+                           class="img-fluid"
+                        />
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section class="section2">
+         <div
+            class="row justify-content-center align-items-center g-2 py-5 my-5"
+         >
+            <div class="col-9 mx-auto bg-body mt-5 p-5">
+               <div class="section2__heading text-center my-5">
+                  <h2>Welcome to Steak In</h2>
+                  <h3>We are food Masters!</h3>
+               </div>
+               <div
+                  class="section2__menu row justify-content-center align-items-center g-5 my-5"
+               >
+                  <div class="section2__menu-item d-flex col-12 col-xxl-6 my-3">
+                     <img
+                        src="assets/media/img/menu1.jpg"
+                        alt=""
+                        class="img-fluid me-3"
+                     />
+                     <div>
+                        <div class="d-flex justify-content-between">
+                           <h4>Grilled American Fillet</h4>
+                           <span>$31.95 </span>
+                        </div>
+                        <p>
+                           Pork fillet, ginger, garlic, honey, pepper & canola
+                           oil.creamy chesapeake crab dip...
+                        </p>
+                     </div>
+                  </div>
+                  <div class="section2__menu-item d-flex col-12 col-xxl-6 my-3">
+                     <img
+                        src="assets/media/img/menu2.jpg"
+                        alt=""
+                        class="img-fluid me-3"
+                     />
+                     <div>
+                        <div class="d-flex justify-content-between">
+                           <h4>Grilled American Fillet</h4>
+                           <span>$31.95 </span>
+                        </div>
+                        <p>
+                           Pork fillet, ginger, garlic, honey, pepper & canola
+                           oil.creamy chesapeake crab dip...
+                        </p>
+                     </div>
+                  </div>
+                  <div class="section2__menu-item d-flex col-12 col-xxl-6 my-3">
+                     <img
+                        src="assets/media/img/menu3.jpg"
+                        alt=""
+                        class="img-fluid me-3"
+                     />
+                     <div>
+                        <div class="d-flex justify-content-between">
+                           <h4>Grilled American Fillet</h4>
+                           <span>$31.95 </span>
+                        </div>
+                        <p>
+                           Pork fillet, ginger, garlic, honey, pepper & canola
+                           oil.creamy chesapeake crab dip...
+                        </p>
+                     </div>
+                  </div>
+                  <div class="section2__menu-item d-flex col-12 col-xxl-6 my-3">
+                     <img
+                        src="assets/media/img/menu4.jpg"
+                        alt=""
+                        class="img-fluid me-3"
+                     />
+                     <div>
+                        <div class="d-flex justify-content-between">
+                           <h4>Grilled American Fillet</h4>
+                           <span>$31.95 </span>
+                        </div>
+                        <p>
+                           Pork fillet, ginger, garlic, honey, pepper & canola
+                           oil.creamy chesapeake crab dip...
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section>
+         <div class="row justify-content-center align-items-center g-2">
+            <div class="col-5 text-center">
+               <h2>Fresh, Tasty Meals</h2>
+               <h3>Discover Our Menu</h3>
+               <i
+                  ><img
+                     src="assets/media/img/h-icon1.png"
+                     alt=""
+                     class="img-fluid"
+               /></i>
+               <p>
+                  Steak In has the perfect place to enjoy fine food and great
+                  cocktails with excellent service, in comfortable atmospheric
+                  surroundings. We have a soft dining room, combined with an
+                  open kitchen, coffee take out bar and alovely awesome on site
+                  coffee roastery.
+               </p>
+            </div>
+            <div class="col-12">
+               <ul class="list-group list-group-horizontal list-group-flush">
+                  <li class="list-group-item"><a href="#" class="list">All</a></li>
+                  <li class="list-group-item"><a href="#">Breakfast</a></li>
+                  <li class="list-group-item"><a href="#">Dessert</a></li>
+                  <li class="list-group-item"><a href="#">Dinner</a></li>
+                  <li class="list-group-item"><a href="#">Drinks</a></li>
+                  <li class="list-group-item"><a href="#">Lunch</a></li>
+               </ul>
+
+               <div class="row justify-content-center align-items-center g-2">
+                  <div class="col-4">Column</div>
+               </div>
+            </div>
+         </div>
+      </section>
+   </body>
+
+   <scriptfiles>
+      <script
+         src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+         crossorigin="anonymous"
+      ></script>
+
+      <!-- (Optional) Use CSS or JS implementation -->
+      <script
+         src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js"
+         integrity="sha512-naukR7I+Nk6gp7p5TMA4ycgfxaZBJ7MO5iC3Fp6ySQyKFHOGfpkSZkYVWV5R7u7cfAicxanwYQ5D1e17EfJcMA=="
+         crossorigin="anonymous"
+         referrerpolicy="no-referrer"
+      ></script>
+
+      <!-- Swiper JS -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+      <!-- Initialize Swiper -->
+      <script src="assets/js/mainpage.js"></script>
+   </scriptfiles>
+</html>

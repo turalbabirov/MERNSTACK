@@ -1,0 +1,19 @@
+.section2 {
+	background-image: url('../media/img/header-slider3.jpg');
+
+	&__menu {
+
+
+		&-item {
+			height: 150px;
+			overflow: hidden;
+
+
+			&>img {
+				max-width: 150px;
+				object-fit: cover;
+				object-position: center;
+			}
+		}
+	}
+}
